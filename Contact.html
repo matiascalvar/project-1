@@ -11,7 +11,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li>About me</li>
+        <li><a href="aboutme.html">About me</a></li>
         <li>Projects</li>
         <li><a href="Contact.html">Contact</a></li>
         <li><a href="table.html">Table</a></li>
@@ -21,18 +21,74 @@
     <main>
       <h2>Contact me</h2>
 
-      <form action="">
-        <input type="text" placeholder="Write your name" />
-        <br>
-        <input type="email" placeholder="Write your email" />
-        <br>
-        <input type="number" placeholder="Write your number" />
-        <br>
-        <input type="password" placeholder="Write your password" />
-        <br>
-        <input type="date" placeholder="Age">
-        <br>
+      <form action="/index.html">
+        <p>
+          <label for="username">Write your username</label>
+          <input id="username" type="text" placeholder="Write your name" name="name" minlength="8"/>
+          <!---id=se relaciona con el label, Type= determina el tipo, placeholder=texto hasta que escribamos, name=se usara mas adelante-->
+        </p>
+        <p>
+          <label for="email">Write your email</label>
+          <input id="email" type="email" placeholder="Write your email" name="email" required/>
+        </p>
+        <p>
+          <label for="number">Write your number</label>
+          <input id="number" type="number" placeholder="Write your number" name="number"/>
+        </p>
+        <p>
+          <label for="password">Write your password</label>
+          <input id="password" type="password" placeholder="Write your password" name="password" required minlength="8" />
+        </p>
+          <label for="date">Write your birthdate</label>
+          <input id="date" type="date" placeholder="Age" name="age"/>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+      <hr>
+
+
+      <h2>Search on Google</h2>
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="Search">
+        <button>Search on Google</button>
+      </form>
+      <h2>More Inputs</h2>
+      <form action="/chickens.html">
+        <label for="agree">I Agree with whatever you said</label>
+        <input type="checkbox" id="agree" name="agree" checked>
+        
+        <p>
+          <label for="option1">1</label>
+          <input type="radio" name="radiobutton" id="option1" value="1">
+          <label for="option2">2</label>
+          <input type="radio" name="radiobutton" id="option2" value="2">
+          <label for="option3">3</label>
+          <input type="radio" name="radiobutton" id="option3" value="3">
+        </p>
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog" selected>Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+        <p>
+          <label for="story">Tell us your story:</label>
+          <br>
+          <textarea required id="story" name="story"
+          rows="5" cols="33">It was a dark and stormy night...
+          </textarea>
+        </p>
+
+
+
+
         <button>Submit</button>
+      
       </form>
     </main>
     <footer></footer>
