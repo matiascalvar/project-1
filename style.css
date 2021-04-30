@@ -28,9 +28,13 @@ main > p {
     background-color: cadetblue; /*direct child*/
 }
 
-/*h1, h2 = estilo a ambos 
+/*h1, h2 = estilo a todos los que se vayan enumerando 
 h1 h2 = estilo a los h2 dentro de h1
 h1 > h2 = estilo a los h2 que siguen inmediatamente a los h1
 h1 + h2 = estilo a los h2 que estan no dentro de los h1, pero inmediatamente seguido debajo
 
 */
+
+input[type="email"] {
+    color:darkgoldenrod; /*cambia el color de lo que ingrese dentro del input de tipo email*/
+}
