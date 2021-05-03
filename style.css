@@ -15,6 +15,20 @@ h1:hover {
   color: black;
 }
 
+h1 {
+  width: min-content;
+  height: min-content;
+  border-style: inset;
+  border-width: 5px;
+  border-color: blueviolet;
+  border-radius: 10px;
+  /*border: 5px inset blueviolet;  un modo mas simple de determinar ciertos elementos*/
+
+  padding: 10px;
+}
+
+
+
 h2 {
   color: blueviolet;
   background-color: rgb(241, 219, 191);
@@ -45,4 +59,10 @@ h1 + h2 = estilo a los h2 que estan no dentro de los h1, pero inmediatamente seg
 
 input[type="email"] {
   color: darkgoldenrod; /*cambia el color de lo que ingrese dentro del input de tipo email*/
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1px;
 }
