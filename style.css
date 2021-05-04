@@ -48,6 +48,7 @@ p {
 
 main > p {
   background-color: cadetblue; /*direct child*/
+  opacity: 0.7;
 }
 
 /*h1, h2 = estilo a todos los que se vayan enumerando 
@@ -65,4 +66,5 @@ img {
   border: 1px solid black;
   border-radius: 10px;
   padding: 1px;
+  margin: 10px;
 }
