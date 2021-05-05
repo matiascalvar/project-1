@@ -1,5 +1,6 @@
 body {
   background-color: beige;
+  background-image: url(images/image1.jpg)
 }
 
 h1 {
@@ -9,10 +10,13 @@ h1 {
   letter-spacing: 10px;
   font-size: 5em;
   font-family: "Gill Sans", sans-serif;
+  transition: 1s;
 }
 
 h1:hover {
   color: black;
+  border-radius: 20%;
+  transform: scale(0.5);
 }
 
 h1 {
